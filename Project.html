@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Resources used for implementing map box api on home page -->
+    
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' /> -->
+
+    <!-- API for starting to destination points -->
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css"> -->
+
+
+</head>
+<body>
+    <header>
+        <a href="#" class="headerclass">Travel Buddy</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-menu">
+                <a href="#">Home</a>
+                <a href="Explore.html">Explore</a>
+                <a href="Navigation.html">Navigate</a>
+                <a href="register.html">Sign Up</a>
+                <a href="#">Contact</a>
+            </div> 
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="car_-_11490 (1080p).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="bike_-_72566 (1080p).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="hinduism_-_40130 (Original).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="mountains_-_81945 (1080p).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="waterfall_-_81362 (1080p).mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Mountains and RoadTrips</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt animi voluptatum expedita corrupti inventore impedit a commodi corporis blanditiis, eius ipsum minima quas est ea neque. Est dicta vero dolorum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Beach</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt animi voluptatum expedita corrupti inventore impedit a commodi corporis blanditiis, eius ipsum minima quas est ea neque. Est dicta vero dolorum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Temples</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt animi voluptatum expedita corrupti inventore impedit a commodi corporis blanditiis, eius ipsum minima quas est ea neque. Est dicta vero dolorum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Adventure</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt animi voluptatum expedita corrupti inventore impedit a commodi corporis blanditiis, eius ipsum minima quas est ea neque. Est dicta vero dolorum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Waterfalls</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt animi voluptatum expedita corrupti inventore impedit a commodi corporis blanditiis, eius ipsum minima quas est ea neque. Est dicta vero dolorum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+
+        </div>
+        </div>
+    </section>
+    <section class="sec1">
+    <div>
+        <h2 class="Heading">Must visit places in India</h2>
+        <div class="row">
+            <div class="left">
+                <img src="images/img5.jpg" alt="">
+            </div>
+
+            <div class="right">
+                <div class="textbox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero, et aperiam necessitatibus reiciendis adipisci dolores totam, eligendi quod cum mollitia quibusdam veniam doloremque inventore neque nostrum maiores iusto illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam tenetur molestias facilis, nemo nihil vel dolorum fugit magni, a inventore tempora eligendi! Quo nulla pariatur quaerat debitis rerum soluta.</p>
+                </div>
+                <div class="col">
+                    <div class="card card1">
+                        <h4>Ayodhya</h4>
+                    </div>
+                    <div class="card card2">
+                        <h4>Isha Foundation</h4>
+                    </div>
+                    <div class="card card3">
+                        <h4>Kedernadh</h4>
+                    </div>
+                    <div class="Explore-more">
+                        <a href="Explore.html">Explore-more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- <footer>
+        <div class="about-us">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam assumenda quidem, recusandae magnam porro modi laboriosam accusamus magni eum fuga velit libero vero natus at veniam commodi similique quaerat.</h5>
+        </div>
+    </footer> -->
+    <script src="project.js"></script>
+    <script>
+        ScrollReveal({
+            reset:true,
+            distance:'60px',
+            duration:1800,
+            delay:400
+        });
+        ScrollReveal().reveal('.Heading',{delay:400});
+        ScrollReveal().reveal('.right',{delay:400});
+        ScrollReveal().reveal('.left',{delay:450});
+        ScrollReveal().reveal('.textbox',{delay:470});
+    </script>
+    
+
+
+</body>
+</html>

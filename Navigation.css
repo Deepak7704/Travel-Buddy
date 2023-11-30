@@ -1,0 +1,7 @@
+.container,.map{
+    display:flex;
+}
+.mapNavigation{
+    position: absolute;
+    width: 100%;
+}

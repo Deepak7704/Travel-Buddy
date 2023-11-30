@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<script src="https://kit.fontawesome.com/938f373854.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+	<div class="form-box">
+		<h1 id="title">Register</h1>
+		<form>
+			<div class="input-group">
+				<div class="input-field" id="nameField">
+					<i class="fa-solid fa-user"></i>
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="input-field">
+					<i class="fa-solid fa-envelope"></i>
+					<input type="email" placeholder="Email">
+				</div>
+				<div class="input-field" id="phone">
+					<i class="fa-solid fa-phone"></i>
+					<input type="tel" placeholder="Phone Number">
+				</div>
+				<div class="input-field">
+					<i class="fa-solid fa-user-lock"></i>
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="input-field" id="confPass">
+					<i class="fa-solid fa-user-lock"></i>
+					<input type="password" placeholder="Confirm Password">
+				</div>
+			<div class="btn-field">
+				<button type="button" id="signupBtn" onclick="window.location.href = 'register.html';">Register</button>
+				<button type="button" class="disable" id="signinBtn" onclick="window.location.href = 'login.html';">Login</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
