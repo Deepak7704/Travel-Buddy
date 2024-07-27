@@ -6,11 +6,13 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
+
+
 #text{
+    text-align: center;
     margin-top: 195px;
     background-color:linen;
     border-radius: 16px;
-
 }
 #templesText{
     margin-left: 16px;

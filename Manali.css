@@ -1,0 +1,60 @@
+.desc 
+{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p
+{
+    margin: 20px 10px;
+    font-size: 20px;
+}
+.hhh
+{
+    display: flex;
+    align-items: center;
+    
+}
+.head
+{
+    font-size: 40px;
+}
+.places
+{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.view /* for border*/ 
+{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+
+h1 /* for image heading*/
+{
+    margin: 5px 5px;
+    font-size: 25px;
+    
+}
+.i1
+{
+    width: 470px;
+}
+img
+{
+    border-radius: 60px;
+    padding: 45px;
+    width: 400px;
+}
+
+.i1 img
+{
+     transition: 1s ease;
+}
+.i1:hover img
+{
+    transform: scale(1.2);
+}

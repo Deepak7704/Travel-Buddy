@@ -34,3 +34,9 @@ document.querySelector('.js-isha-foundation').addEventListener('click',()=>{
 document.querySelector('.js-ayodhya').addEventListener('click',()=>{
 	window.location.href="Ayodhya.html"
 });
+document.querySelector('.js-kedernath').addEventListener('click',()=>{
+	window.location.href="Kedarnath.html"
+});
+document.querySelector('.js-konark').addEventListener('click',()=>{
+	window.location.href="konark.html"
+});

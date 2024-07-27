@@ -5,3 +5,8 @@
     font-style:normal;
     width: 800px;
 }
+.slick-carousel{
+    height: 500px;
+    width: 1000px;
+    margin-left: 200px;
+}

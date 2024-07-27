@@ -6,7 +6,9 @@
     <title>Travel</title>
     <link rel="stylesheet" href="Project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Resources used for implementing map box api on home page -->
     
@@ -28,9 +30,27 @@
                 <a href="#">Home</a>
                 <a href="Explore.html">Explore</a>
                 <a href="Navigation.html">Navigate</a>
-                <a href="register.html">Sign Up</a>
-                <a href="#">Contact</a>
-            </div> 
+                <a href="Register1.html">Sign Up</a>
+                <button id="btn-contact" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact us</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Textfield</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your query:"></textarea>
+                    </div> 
+                    <button id="btn-contact-submit" type="button" class="btn btn-outline-primary">Submit</button>
+                </div>
+                </div>  
+            </div>
         </div>
     </header>
     <section class="home">
@@ -76,34 +96,102 @@
         </div>
     </section>
     <section class="sec1">
-    <div>
-        <h2 class="Heading">Must visit places in India</h2>
-        <div class="row">
-            <div class="left">
-                <img src="images/img5.jpg" alt="">
+    <div class="MainCardContent">
+        <div class="card" style="width: 18rem;">
+            <img src="images/Akshardham-Temple.webp" class="card-img-top" alt="..." height="146px">
+            <div class="card-body">
+              <h5 class="card-title">Temples</h5>
+              <p class="card-text">Explore India's divine heritage. Visit ancient temples, experience rituals, and find spiritual serenity amidst architectural marvels and sacred sites.</p>
+              <a href="#" class="btn btn-primary">Know more</a>
             </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/Adventure.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Adventure</h5>
+              <p class="card-text">Dare to embark on thrilling adventures! From trekking in the Himalayas to water sports in Goa, India offers adrenaline-pumping escapades.<br/><br/></p>
+              <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/historical-bkg.jpg" class="card-img-top" alt="..." height="146px">
+            <div class="card-body">
+              <h5 class="card-title">Histortical</h5>
+              <p class="card-text">Step into the past! Discover India's rich history through magnificent forts, palaces, and UNESCO World Heritage sites. Immerse in timeless tales.</p>
+              <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+        </div>
 
-            <div class="right">
-                <div class="textbox">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero, et aperiam necessitatibus reiciendis adipisci dolores totam, eligendi quod cum mollitia quibusdam veniam doloremque inventore neque nostrum maiores iusto illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam tenetur molestias facilis, nemo nihil vel dolorum fugit magni, a inventore tempora eligendi! Quo nulla pariatur quaerat debitis rerum soluta.</p>
-                </div>
-                <div class="col">
-                    <div class="card card1">
-                        <h4>Ayodhya</h4>
-                    </div>
-                    <div class="card card2">
-                        <h4>Isha Foundation</h4>
-                    </div>
-                    <div class="card card3">
-                        <h4>Kedernadh</h4>
-                    </div>
-                    <div class="Explore-more">
-                        <a href="Explore.html">Explore-more</a>
-                    </div>
-                </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/Gurez-Valley-1.jpg" class="card-img-top" alt="..." height="146px">
+            <div class="card-body">
+              <h5 class="card-title">Mountains</h5>
+              <p class="card-text">Escape to majestic mountains! Marvel at the Himalayan peaks, explore serene hill stations, and breathe in the crisp mountain air. Unwind in nature's embrace.</p>
+              <a href="#" class="btn btn-primary">Know more</a>
             </div>
         </div>
     </div>
+    <p class="heading">FAQ's</p>
+    <div class="accordion accordion-flush faq" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              When is the best time to visit India?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p>The best time to visit India depends on the region and your preferences. Generally, the winter months (October to March) offer pleasant weather for most parts of the country.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What are the must-visit destinations in India?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">India is diverse and has numerous must-visit destinations. Some popular ones include the Taj Mahal in Agra, Jaipur in Rajasthan, Kerala's backwaters, Varanasi, and the Himalayan region.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What are the essential travel documents required for visiting India?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Travelers typically need a valid passport and an appropriate visa to enter India. It's important to check the specific visa requirements based on your nationality and the purpose of your visit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular-places">
+        <div class="heading">
+          <p>Iconic Marvels: Unveiling India's Timeless Wonders</p>
+        </div>
+        <div class="display-outer">
+          <div class="card-places1 card1">
+          </div>
+          <div class="display-inner">
+            <div class="card-places2 card2">
+            </div>
+            <div class="card-places2 card3">
+            </div>
+            <div class="card-places2 card4">
+            </div>
+            <div class="card-places2 card5">
+            </div>
+          </div>
+        </div>
+        <div class="display-outer">
+          <div class="card-places3 card6">
+          </div>
+          <div class="card-places3 card7">
+          </div>
+        </div>
+      </div>
+      <div class="patners-img">
+      </div>
     </section>
     <!-- <footer>
         <div class="about-us">
@@ -111,18 +199,7 @@
         </div>
     </footer> -->
     <script src="project.js"></script>
-    <script>
-        ScrollReveal({
-            reset:true,
-            distance:'60px',
-            duration:1800,
-            delay:400
-        });
-        ScrollReveal().reveal('.Heading',{delay:400});
-        ScrollReveal().reveal('.right',{delay:400});
-        ScrollReveal().reveal('.left',{delay:450});
-        ScrollReveal().reveal('.textbox',{delay:470});
-    </script>
+
     
 
 

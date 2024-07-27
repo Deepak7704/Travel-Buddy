@@ -1,0 +1,30 @@
+.travel-btn{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.header{
+    font-size: 36px;
+    font-family: sans-serif;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+}
+.container1-1{
+    display: flex;
+
+}
+.card-activity{
+    margin-top: 20px;
+    margin-left: 70px;
+    height: 350px;
+    width: 800px;
+}
+.card-image{
+    display: flex;
+}
+.display-direction{
+    display: flex;
+}
