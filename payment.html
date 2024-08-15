@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 20px 0;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+        }
+        .message {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #e67e22;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .home-link:hover {
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Portal</h1>
+        <p class="price" id="totalPrice"></p>
+        <div class="qr-code">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.7xGQKpUtezOy0cDWXQExxQHaHa&pid=Api&P=0&h=180" alt="QR Code for Payment">
+        </div>
+        <p class="message">Scan the QR code to make your payment.</p>
+        <a href="#" class="btn" onclick="showConfirmation()">Confirm Booking</a>
+        <a href="project.html" class="home-link">Back to Home</a>
+    </div>
+
+    <script>
+        // Retrieve the total cost from localStorage
+        const totalPrice = localStorage.getItem('totalPrice');
+        
+        // Display the total price
+        document.getElementById('totalPrice').innerText = `Total Price: Rs. ${totalPrice}`;
+        
+        // Function to show confirmation popup
+        function showConfirmation() {
+            alert('Booking confirmed! For further updates, you will be notified via SMS.');
+        }
+    </script>
+</body>
+</html>

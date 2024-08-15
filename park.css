@@ -1,0 +1,70 @@
+:root {
+    --light-bg: #f9f9f9;
+    --light-black: #333;
+    --light-white: #f1f1f1;
+    --black: #000;
+    --white: #fff;
+    --primary-color: #4CAF50;
+    --border: 1px solid #ccc;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-black);
+}
+
+.park-info {
+    padding: 50px 10%;
+    background: var(--light-bg);
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.park-info .heading-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: var(--white);
+    border: var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: var(--light-black);
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: var(--light-black);
+    margin: 0;
+}

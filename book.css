@@ -1,0 +1,129 @@
+:root {
+    --light-bg: #f9f9f9;
+    --light-black: #333;
+    --light-white: #f1f1f1;
+    --black: #000;
+    --white: #fff;
+    --primary-color: rgb(248,184,120);
+    --secondary-color: #8BC34A;
+    --border: 1px solid #ccc;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-black);
+}
+
+.heading {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.booking {
+    padding: 50px 10%;
+    background: var(--light-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.booking .heading-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.booking .book-form {
+    padding: 2rem;
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.booking .book-form .inputBox {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.booking .book-form .inputBox span {
+    font-size: 1.2rem;
+    color: var(--light-black);
+    flex-basis: 150px;
+}
+
+.booking .book-form .inputBox input {
+    width: calc(100% - 160px);
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: var(--light-black);
+    text-transform: none;
+    border: var(--border);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.booking .book-form .inputBox input:focus {
+    background: var(--primary-color);
+    color: var(--white);
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.booking .book-form .inputBox input::placeholder {
+    color: var(--light-black);
+}
+
+.booking .book-form .radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.booking .book-form .radio-group label {
+    font-size: 1.2rem;
+    color: var(--light-black);
+    display: flex;
+    align-items: center;
+}
+
+.booking .book-form .radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.booking .book-form .btn {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+}
+
+.booking .book-form .btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}

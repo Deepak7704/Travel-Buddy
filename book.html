@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+<body>
+<section class="booking">
+    <h1 class="heading-title" style="color: rgb(248,184,120);">Book Your Trip</h1>
+
+    <form id="bookingForm" method="post" action="book_form.php" class="book-form">
+        <div class="inputBox">
+            <span>Name:</span>
+            <input type="text" placeholder="Enter your name" name="name" required>
+        </div>
+        <div class="inputBox">
+            <span>Email:</span>
+            <input type="email" placeholder="Enter your email" name="email" required>
+        </div>
+        <div class="inputBox">
+            <span>Phone:</span>
+            <input type="tel" placeholder="Enter your number" name="phone" required>
+        </div>
+        <div class="inputBox">
+            <span>Address:</span>
+            <input type="text" placeholder="Enter your address" name="address" required>
+        </div>
+        <div class="inputBox">
+            <span>How many:</span>
+            <input type="number" id="guests" placeholder="Number of guests" name="guests" required>
+        </div>
+        <div class="inputBox">
+            <span>Need a Guide?</span>
+            <input type="text" id="guide" placeholder="Yes/No" name="guide" required>
+        </div>
+        <div class="inputBox">
+            <span>Arrivals:</span>
+            <input type="date" name="arrivals" required>
+        </div>
+        <div class="inputBox">
+            <span>Leaving:</span>
+            <input type="date" name="leaving" required>
+        </div>
+        <input type="submit" value="Submit" class="btn" name="send">
+    </form>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve the package cost from URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const packageCost = parseFloat(urlParams.get('price'));
+
+            // Retrieve the number of guests
+            const guests = parseInt(document.getElementById('guests').value, 10);
+
+            // Retrieve the guide preference
+            const guide = document.getElementById('guide').value.toLowerCase();
+            let totalCost = packageCost;
+
+            // Calculate additional cost based on the number of guests
+            if (guests > 1) {
+                totalCost += packageCost * 0.70 * (guests - 1);
+            }
+            if (guests > 2) {
+                totalCost += packageCost * 0.60 * (guests - 2);
+            }
+            if (guests > 3) {
+                totalCost += packageCost * 0.50 * (guests - 3);
+            }
+
+            // If the guide is needed, add 10% of the package cost
+            if (guide === 'yes') {
+                totalCost += packageCost * 0.10;
+            }
+
+            // Store the total cost in localStorage
+            localStorage.setItem('totalPrice', totalCost);
+
+            // Redirect to the summary page
+            window.location.href = 'payment.html';
+        });
+    </script>
+</section>
+</body>
+</html>

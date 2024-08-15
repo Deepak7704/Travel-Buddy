@@ -3,104 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="isha-foundation.css">
+    <title>Isha-Foundation</title>
+
+    <link rel="stylesheet" href="Kedarnath.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Isha-Foundation</title>
 </head>
 <body>
-    <h2>Welcome to Isha-Foundation</h2>
-    <div class="destination">
-        <p id="destination-description">Sadhguru Sannidhi, Bengaluru is located near Nandi Hills in Chikkaballapura district, 65 kilometers north of Bengaluru.</br>
+    <p class="header">Isha Foundation: Unveiling the Spiritual Wonders of Modern India</p>
+    <div class="container">
+        <div class="card" style="width: 48rem; height: 40rem;  margin:10px;">
+            <img src="https://wallpaperaccess.com/full/6503262.jpg" class="card-img-top" alt="Temple-icon">
+            <div class="card-body">
+              <p class="card-text"><b>Isha Foundation: Nurturing Spiritual Growth and Well-being</b>Situated at the foothills of the Velliangiri Mountains in Tamil Nadu, the Isha Foundation is a non-profit organization founded by Sadhguru Jaggi Vasudev in 1992. The foundation aims to promote human well-being through yoga, social outreach, and environmental initiatives. 
+                </p>
+                <div class="travel-btn">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Explore Nearby Hotels</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasRightLabel">Accommodation Options Nearby:</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="hotels-kedarnath">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/Kedarnath-h1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Turiya Heli Resort</h5>
+                                      <p class="card-text">
+                                        <b>Resort Features:</b></br>
+                                        Double Bed,
+                                        Air Purifier,
+                                        Housekeeping,
+                                        Room Service,
+                                        Chair,
+                                        Woollen Blanket
+                                      </p>
+                                      <a href="#" class="btn btn-primary">Book now</a>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem; margin-top: 16px;">
+                                    <img src="images/Kedarnath-h2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Hotel The Narendra Orchid</h5>
+                                      <p class="card-text">
+                                        <b>Hotel Features:</b></br>
+                                        Double Bed,
+                                        Air Purifier,
+                                        Housekeeping,
+                                        Room Service,
+                                        Chair,
+                                        Woollen Blanket</p>
+                                      <a href="#" class="btn btn-primary">Book now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Travel now >></button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Traveler Details Form</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                                <div class="display-direction">
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Full Name:</label>
+                                        <input required type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Email Address:</label>
+                                        <input required type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                </div>
+                              <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                                <input required type="tel" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="display-direction">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Start Date of Travel</label>
+                                    <input required type="date" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">End Date of Travel</label>
+                                    <input required type="date" class="form-control" id="recipient-name">
+                                  </div>
+                              </div>
+                              <div class="display-direction">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Number of Travelers
+                                    </label>
+                                    <input required type="number" class="form-control" id="recipient-name">
+                                </div>
+                              </div>
 
-            The Center is 45 km from the Kempegowda International Airport, Bengaluru (60-minute drive) and 63 km from the Cantonment Railway Station, Bengaluru (80-minute drive).
-            
-            Taxis are available from Bengaluru to Sadhguru Sannidhi. Regular bus services also operate between Bengaluru and Chikkaballapura town, as well as between Chikkaballapura town and the Sannidhi.</p>
-    </div>
-    <div class="slick-carousel">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/Adventure.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/Araku_Valley.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/Gurez-Valley-1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 48rem; max-height: 20rem; margin-top: 16px;">
+            <div class="card-header">Isha</div>
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">
+                Situated at the foothills of the Velliangiri Mountains in Tamil Nadu, the Isha Foundation is a non-profit organization founded by Sadhguru Jaggi Vasudev in 1992. The foundation promotes human well-being through yoga, spiritual programs, and environmental initiatives.
+
+Admired for its serene environment, the centerpiece of the Isha Yoga Center is the Dhyanalinga, a powerful meditative space open to people of all faiths. The Adiyogi Statue, recognized by the Guinness World Records as the world's largest bust, stands as a symbol of yogic science and spirituality.
+
+Isha Foundation hosts the annual Mahashivratri festival, drawing participants from around the world for a night of music, dance, and meditation. The foundation also leads environmental campaigns like Rally for Rivers and the GreenHands Project, contributing significantly to ecological conservation and sustainable living.</p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="card-image">
+                <div class="card" style="width: 18rem; margin: 10px;">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.vAaNfjezyUX4u_b6O1DUBQHaEr&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Isha Foundation and the Mahashivratri Festival: A Spiritual Journey in Tamil Nadu</p>
+                      </div>
+                  </div>
+                <div class="card" style="width: 18rem; margin: 10px;">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.fZNYI6j9LC2kQIJmnu7_ZwHaE8&pid=Api&P=0&h=180" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Combine your visit to the Isha Foundation with the immersive Mahashivratri festival, experiencing daily rituals and spiritual practices.</p>
+                      </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="images/Chatpal-Mount.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <br/>
-    <div class="card">
-      <h5 class="card-header">Featured</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/lion-safari-GIR.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
+    <p class="header">Destinations and Experiences to Explore in Coimbatore:</p>
+    
+    <div class="container2">
+        <div class="card-activity">
+            <p><b>Dhyanalinga:</b></br>
+
+              The Dhyanalinga at the Isha Yoga Center is a unique meditative space that provides a profound spiritual experience. Open to people of all faiths, it serves as a powerful energy center for meditation and inner exploration.</br>
+                
+                <b>Marudamalai Temple:</b></br>
+                Located on a hillock, Marudamalai Temple is dedicated to Lord Murugan. The temple offers panoramic views of the surrounding landscape and is a significant spiritual site in Coimbatore.</br>
+
+                <b>International Sand Art Festival</b></br>
+                Known for its pristine beauty and sweet-tasting water, Siruvani Waterfalls is a popular tourist spot near Coimbatore. The surrounding lush greenery makes it an ideal place for nature lovers and trekkers.</br>
+
+            </p>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/Adventure.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
+        <div class="container1-1">
+            <div class="card" style="width: 38rem; margin-left: 60px; margin-bottom: 80px;">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.h8jFUBOT-hC6fmqoCOJWLAHaD-&pid=Api&P=0&h=180" class="card-img-top" alt="vasuki-tal image">
+                <div class="card-body">
+                  <p class="card-text"><b>Gass Forest Museum:</b></br>The Gass Forest Museum is an educational museum showcasing a diverse range of exhibits related to forestry, wildlife, and natural history. It's an excellent place for those interested in environmental conservation and biology.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 38rem; margin-left: 20px; margin-bottom: 80px;">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.nx8ltmGTf7Rw5-EZrBB_eAHaEo&pid=Api&P=0&h=180">
+                <div class="card-body">
+                  <p class="card-text"><b>VOC Park and Zoo:</b></br>VOC Park and Zoo is a popular family destination featuring a variety of animals, a children's play area, and a botanical garden. It's a perfect spot for a leisurely day out with family and friends.</p>
+                </div>
+            </div>  
         </div>
-      </div>
+        <p class="header">Essential Travel Tips for a Sacred Journey to Isha:</p>
+        <div class="card-activity">
+          <b>Weather Awareness:</b></br>
+          <p>Stay informed about the weather conditions and pack accordingly, as temperatures can vary.</p></br>
+            <b>Getting There:</b></br>
+            <p>The nearest airport is Biju Patnaik International Airport, and Puri Railway Station provides rail connectivity. Local transport options are available.</p></br>
+
+            <b>Accommodation Arrangements:</b></br>
+            <p>Plan your stay in advance, especially during festivals. Puri offers diverse accommodation options catering to various preferences and budgets.</p></br>
+
+            <b>Cultural Respect:</b></br>
+            <p>Adhere to cultural norms, especially at religious sites. Dress modestly and respect the sanctity of the temple.</p></br>
+
+            <b>Photography Etiquette:</b></br>
+            <p>Follow photography guidelines within the temple premises, respecting any restrictions in certain areas.</p></br>
+        </div>
     </div>
 </body>
 </html>

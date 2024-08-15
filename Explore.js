@@ -40,3 +40,47 @@ document.querySelector('.js-kedernath').addEventListener('click',()=>{
 document.querySelector('.js-konark').addEventListener('click',()=>{
 	window.location.href="konark.html"
 });
+document.querySelector('.js-varanasi').addEventListener('click',()=>{
+	window.location.href="Varanasi.html"
+});
+document.querySelector('.js-aksharadham').addEventListener('click',()=>{
+	window.location.href="Akshardham.html"
+});
+document.querySelector('.js-zoo6').addEventListener('click',()=>{
+	window.location.href="Bannerghatta.html"
+});
+document.querySelector('.js-zoo4').addEventListener('click',()=>{
+	window.location.href="Gir.html"
+});
+document.querySelector('.js-zoo2').addEventListener('click',()=>{
+	window.location.href="Nehru.html"
+});
+document.querySelector('.js-zoo3').addEventListener('click',()=>{
+	window.location.href="Ranthambore.html"
+});
+document.querySelector('.js-zoo1').addEventListener('click',()=>{
+	window.location.href="Sanjay.html"
+});
+document.querySelector('.js-zoo5').addEventListener('click',()=>{
+	window.location.href="Jim.html"
+});
+
+
+document.querySelector('.js-yuksom').addEventListener('click',()=>{
+	window.location.href="Yuksom.html"
+});
+document.querySelector('.js-gurez').addEventListener('click',()=>{
+	window.location.href="Gurez.html"
+});
+document.querySelector('.js-dandeli').addEventListener('click',()=>{
+	window.location.href="Dandeli.html"
+});
+document.querySelector('.js-chaptal').addEventListener('click',()=>{
+	window.location.href="Chaptal.html"
+});
+document.querySelector('.js-manali').addEventListener('click',()=>{
+	window.location.href="Manali.html"
+});
+document.querySelector('.js-araku').addEventListener('click',()=>{
+	window.location.href="Araku.html"
+});
